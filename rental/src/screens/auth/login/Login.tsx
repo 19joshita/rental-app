@@ -15,7 +15,6 @@ type Props = {
   setShowPassword: React.Dispatch<React.SetStateAction<boolean>>;
   navigation: any;
 };
-
 const Login = ({
   initialValues,
   handleSubmit,
@@ -47,7 +46,6 @@ const Login = ({
         }) => {
           return (
             <View style={loginStyle.mainContainer}>
-              {/* Name */}
               <View>
                 <Text style={loginStyle.label}>Name</Text>
                 <TextInput
@@ -62,8 +60,6 @@ const Login = ({
                   <Text style={loginStyle.error}>{errors?.name}</Text>
                 )}
               </View>
-
-              {/* Email */}
               <View>
                 <Text style={loginStyle.label}>Email</Text>
                 <TextInput
@@ -80,7 +76,6 @@ const Login = ({
                 )}
               </View>
 
-              {/* Password */}
               <View>
                 <Text style={loginStyle.label}>Password</Text>
                 <View style={loginStyle.passwordView}>
@@ -129,7 +124,7 @@ const Login = ({
                 </View>
                 <Text style={loginStyle.forgotText}>Forgot Password ?</Text>
               </View>
-              {/* Submit */}
+
               <View style={loginStyle.actions}>
                 <TouchableOpacity
                   style={loginStyle.button}

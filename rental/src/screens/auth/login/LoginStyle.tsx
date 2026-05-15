@@ -1,7 +1,7 @@
 import { StyleSheet, Platform } from 'react-native';
 
 export const loginStyle = StyleSheet.create({
-    container: {
+  container: {
     flex: 1,
     padding: 24,
     backgroundColor: '#ffffff',

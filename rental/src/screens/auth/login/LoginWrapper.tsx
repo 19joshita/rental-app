@@ -38,7 +38,7 @@ const LoginWrapper = () => {
   });
   const handleSubmit = (
     values: loginInitialValue,
-    {}: FormikHelpers<loginInitialValue>,
+    { }: FormikHelpers<loginInitialValue>,
   ) => {
     console.log('values', values);
   };
